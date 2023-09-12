@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+}
+
+body {
+    background-color: #909090;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 800px;
+    margin: 10px 0 10px 0;
+}
+
+.mini-logo {
+    width: 100px;
+}
+
+nav {
+    margin: 30px 0 30px 0;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+div img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+div ul {
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #606060;
+    color: lightgray;
+}
+
+li::marker {
+    content: none;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0 30px 0;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.about-container {
+    width: 800px;
+    height: 200px;
+    border: 1px solid #606060;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #606060;
+    color: lightgray;
+    background-image: url("https://images.pexels.com/photos/2735981/pexels-photo-2735981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-columns {
+    justify-content: center;
+
+}
+
+.column {
+    display: flex;
+    width: 300px;
+    row-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.column p, .column li {
+    width: 200px;
+}
+
+.column p {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #606060;
+    color: lightgray;
+}
+
+.column li {
+    display: grid;
+    width: 180px;
+    gap: 0;
+    background-color: #606060;
+    color: lightgray;
+}
+
+
+footer section {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    animation: moving 8s linear infinite;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    transition: 0.8s;
+    text-shadow: 2px 2px 2px white;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(100px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
